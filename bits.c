@@ -1,7 +1,7 @@
 /*
  * CS:APP Data Lab
  *
- * <Please put your name and userid here>
+ * <Mariam Shalikashvili mariam.shalikashvili>
  *
  * bits.c - Source file with your solutions to the Lab.
  *          This is the file you will hand in to your instructor.
@@ -266,13 +266,7 @@ int divpwr2(int x, int n)
  */
 int negate(int x)
 {
-  // Handle special case when x is the minimum two's complement integer
-  if (x == 0x80000000)
-  {
-    return x;
-  }
-  // For all other cases, take one's complement of x and add 1
-  return (~x) + 1;
+   return ~x + 1; // Two's complement negation
 }
 /*
  * isPositive - return 1 if x > 0, return 0 otherwise
